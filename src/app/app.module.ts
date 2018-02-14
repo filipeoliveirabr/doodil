@@ -6,6 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { FormsModule } from '@angular/forms';
 import { QuestionComponent } from './question/question.component';
+import { QuestionService } from './services/question.service';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { QuestionComponent } from './question/question.component';
     MaterialModule,
     FormsModule
   ],
-  providers: [],
+  providers: [QuestionService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

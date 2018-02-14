@@ -9,17 +9,4 @@ import { QuestionService } from './services/question.service';
 
 export class AppComponent {
   
-  answer: String = '';
-  answerDisplay: String = '';
-  showSpinner: Boolean = false;
-
-  showAnswer() {
-    this.showSpinner = true;
-
-    setTimeout(() => {
-      this.answerDisplay = this.answer;
-      this.showSpinner   = false;
-    }, 2000);
-  }
-
 }

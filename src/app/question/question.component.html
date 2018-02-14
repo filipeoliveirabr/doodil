@@ -1,7 +1,11 @@
 <mat-card>
-  PERGUNTAAAAAA???
+  {{currentQuestion.title}}
+  
   <br /><br />
   RESPOSTA!!
   <br /><br />
-  <button mat-raised-button>Answer me</button>
+  <mat-divider></mat-divider>
+  <br />
+  <button mat-raised-button (click)="prev()">Anterior</button>
+  <button mat-raised-button (click)="next()">Próximo</button>
 </mat-card>
